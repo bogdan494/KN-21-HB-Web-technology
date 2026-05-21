@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 4: Вступ до JavaScript</title>
+</head>
+<body>
+    <h1>Лабораторна робота 4: Вступ до JavaScript</h1>
+
+    <script>
+        // Завдання 1: Привітання користувача
+        let name = prompt("Будь ласка, введіть ваше ім'я:");
+        if (name) {
+            let greeting = `Привіт, ${name}!`;
+            alert(greeting);
+            console.log(greeting);
+        } else {
+            console.log("Ім'я не було введено.");
+        }
+
+
+        // Завдання 2: Проста арифметика
+        console.log("Завдання 2.");
+
+        let num1 = parseFloat(prompt("Введіть перше число:"));
+        let num2 = parseFloat(prompt("Введіть друге число:"));
+
+        let sum = num1 + num2;
+        let diff = num1 - num2;
+
+        let mathResultText = `Результати обчислень сума: ${sum}\nРізниця: ${diff}`;
+        alert(mathResultText);
+        console.log(mathResultText);
+
+
+        // Завдання 3: Вік користувача
+        let userYear = prompt("Ваш рік народження:");
+        let currentYear = new Date().getFullYear(); // Поточний рік
+        const adminAge = 19;
+        let userInfo = " ";
+
+        let userAge = currentYear  - Number(userYear);
+        let dif = Math.abs(adminAge - userAge);
+
+        if (userAge > adminAge) {
+            userInfo = "старший";
+        } else if (userAge < adminAge) {
+            userInfo = "молодший";
+        } else {
+            userInfo = "того ж віку, що й ви";
+        }
+
+        alert(`Поточний вік користвувача ${userAge} \nПовідомлення користувач ${userInfo} на ${dif} років`);
+        
+
+    </script>
+</body>
+</html>
