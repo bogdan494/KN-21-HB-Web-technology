@@ -1,0 +1,158 @@
+html {
+    scroll-behavior: smooth; /* Плавне прокручування по якорях */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #000;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Оформлення Header & Навігації (Темно-синій фон) */
+header {
+    background-color: #310f12; /* Колір як на скриншоті */
+    color: white;
+    text-align: center;
+    padding: 40px 20px 0 20px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.header-content .subtitle {
+    margin: 10px 0 30px 0;
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+nav {
+    background-color: #3d1900; /* Трохи темніший відтінок для меню */
+    padding: 12px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #3445db;
+}
+
+/* Секції контенту */
+main {
+    background-color: #ffffff;
+    padding: 20px 0 60px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Виправлені стилі для секції контактів */
+#contacts {
+    display: flex;
+    flex-direction: column; 
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Зсуває форму примусово вправо */
+    width: 100%;
+}
+
+#contact-form {
+    width: 100%;
+    max-width: 400px; /* Фіксована ширина форми як на макеті */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #2980b9;
+}
+
+/* Кнопка надіслати */
+#contact-form button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+    font-weight: normal;
+}
+
+#contact-form button:hover {
+    background-color: #2471a3;
+}
+
+/* Оформлення підвалу */
+footer {
+    background-color: #310f12;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.views-counter {
+    font-size: 12px;
+    color: #bdc3c7;
+    margin-top: 5px;
+}
+
+#views-count {
+    font-weight: bold;
+    color: #bbbbbb;
+}

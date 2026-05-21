@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-візитка</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Богдан Гуменчук</h1>
+        <p>Моя професія: Web-розробник</p>
+        <nav>
+            <a href="#about">Про мене</a>
+            <a href="#skills">Навички</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>Про мене</h2>
+            <p>Я студент, який вивчає фронтенд розробку. Цей сайт створено як частину лабораторної роботи.</p>
+        </section>
+
+        <section id="skills" class="container">
+                <h2>Мої навички</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+
+        <section id="contact" class="container">
+            <h2>Зв'язатися зі мною</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Введіть ім'я" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Богдан Гуменчук. Всі права захищені.</p>
+        <p class="views-counter">Кількість переглядів сторінки: <span id="views-count">0</span></p>
+    </footer>
+</body>
+</html>
