@@ -1,0 +1,46 @@
+/* Загальні стилі */
+body {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: #eef;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #469248;
+color: #fff;
+text-align: center;
+padding: 12px;
+}
+footer{
+background-color: #19817c9c;
+color: #fff;
+text-align: center;
+padding: 12px; 
+}
+/* Стилізація контейнера за допомогою Flexbox */
+.container {
+display: flex;
+justify-content: space-around; /* Простір між блоками */
+align-items: center; /* Вертикальне вирівнювання */
+padding: 12px;
+}
+/* Стилізація блоків (демонстрація Box Model) */
+.box {
+background-color: #fff;
+border: 2px solid #333;
+padding: 12px;
+margin: 12px;
+width: 120px;
+text-align: center;
+border-radius: 15px;
+}
+/* Медіа-запит для адаптивності */
+@media (max-width: 768px) {
+.container {
+flex-direction: column; /* Вертикальне розташування для менших екранів */
+font-family:'Times New Roman', Times, serif;
+}
+.box{
+background-color:#b62222
+}
+}
