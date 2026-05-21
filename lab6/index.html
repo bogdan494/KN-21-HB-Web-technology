@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="registration-card">
+        <h2>Форма реєстрації</h2>
+        
+        <form id="registration-form" novalidate>
+            <div class="form-group">
+                <label for="username">Ім'я:</label>
+                <input type="text" id="username" name="username"required>
+                <span class="error-msg" id="username-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-msg" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-msg" id="password-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Повторіть пароль:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="error-msg" id="confirm-password-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Вік:</label>
+                <input type="number" id="age" name="age" min="1" required>
+                <span class="error-msg" id="age-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Стать:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="Чоловік"> Чоловік
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Жінка"> Жінка
+                    </label>
+                </div>
+                <span class="error-msg" id="gender-error"></span>
+            </div>
+
+            <button type="submit" id="submit-btn">Зареєструватися</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

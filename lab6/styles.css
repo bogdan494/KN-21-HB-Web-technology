@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.registration-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px #0000001a;
+    box-sizing: border-box;
+}
+
+.registration-card h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group select {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+
+/* Радіо кнопки в рядок */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Повідомлення про помилки */
+.error-msg {
+    color: #ff3333;
+    font-size: 12px;
+    margin-top: 3px;
+    min-height: 10px; /* Запобігає "стрибанню" форми */
+}
+
+/* Кнопка Зареєструватися */
+button {
+    background-color: #008000; /* Зелений колір як на фото */
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #006400;
+}
